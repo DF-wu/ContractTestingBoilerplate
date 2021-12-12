@@ -10,6 +10,7 @@ import au.com.dius.pact.provider.junit5.PactVerificationInvocationContextProvide
 import au.com.dius.pact.provider.junitsupport.Consumer;
 import au.com.dius.pact.provider.junitsupport.Provider;
 import au.com.dius.pact.provider.junitsupport.loader.PactBroker;
+import au.com.dius.pact.provider.junitsupport.loader.PactFolder;
 import com.example.producer.Producer;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.SneakyThrows;
@@ -23,7 +24,7 @@ import java.time.LocalDate;
 @Provider("dateProviderKafka")
 @Consumer("dateConsumerKafka")
 @PactBroker(url = "http://localhost:8282/")
-//@PactFolder("./pacts")
+@PactFolder("./pacts")
 public class DateProducerTest {
 
     @TestTemplate
