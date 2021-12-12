@@ -36,6 +36,7 @@ public class AgeConsumerTest {
                 WireMockPactGenerator.builder("the-consumer", "the-provider")
                         .build());
         wireMockServer.start();
+        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! " + port);
         baseUrl = "http://localhost:" + port;
     }
 
