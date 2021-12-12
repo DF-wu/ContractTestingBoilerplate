@@ -22,7 +22,7 @@ import java.time.LocalDate;
 
 @Provider("dateProviderKafka")
 @Consumer("dateConsumerKafka")
-@PactBroker(url = "localhost:8282")
+@PactBroker(url = "http://localhost:8282/")
 //@PactFolder("./pacts")
 public class DateProducerTest {
 
