@@ -24,8 +24,15 @@
             <version>4.3.2</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/fluent-hc -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>fluent-hc</artifactId>
+            <version>4.5.13</version>
+        </dependency>
 
-<!--        <dependency>-->
+
+        <!--        <dependency>-->
 <!--            <groupId>au.com.dius.pact.consumer</groupId>-->
 <!--            <artifactId>java8</artifactId>-->
 <!--            <version>4.1.10</version>-->
