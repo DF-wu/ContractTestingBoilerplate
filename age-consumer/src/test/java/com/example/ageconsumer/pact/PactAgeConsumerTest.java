@@ -21,7 +21,7 @@ import java.util.Map;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @ExtendWith(PactConsumerTestExt.class)
-@PactTestFor(providerName = "dateProvider", port = "1234", providerType = ProviderType.ASYNCH)
+@PactTestFor(providerName = "dateProvider", port = "1234")
 public class PactAgeConsumerTest {
 
     @Pact(consumer = "ageConsumer")
