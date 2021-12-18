@@ -20,7 +20,7 @@ import java.util.Map;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @ExtendWith(PactConsumerTestExt.class)
-@PactTestFor(providerName = "dateProvider", port = "1234")
+@PactTestFor(providerName = "dateProvider", port = "8080")
 public class PactAgeConsumerTest {
 
     @Pact(consumer = "ageConsumer")
