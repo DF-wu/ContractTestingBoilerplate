@@ -12,16 +12,24 @@
     <artifactId>age-consumer</artifactId>
 
     <dependencies>
+<!--        <dependency>-->
+<!--            <groupId>au.com.dius.pact.consumer</groupId>-->
+<!--            <artifactId>junit5</artifactId>-->
+<!--            <version>4.2.2</version>-->
+<!--        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/au.com.dius.pact.consumer/junit5 -->
         <dependency>
             <groupId>au.com.dius.pact.consumer</groupId>
             <artifactId>junit5</artifactId>
-            <version>4.2.2</version>
+            <version>4.3.2</version>
         </dependency>
-        <dependency>
-            <groupId>au.com.dius.pact.consumer</groupId>
-            <artifactId>java8</artifactId>
-            <version>4.1.10</version>
-        </dependency>
+
+
+<!--        <dependency>-->
+<!--            <groupId>au.com.dius.pact.consumer</groupId>-->
+<!--            <artifactId>java8</artifactId>-->
+<!--            <version>4.1.10</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-contract-wiremock</artifactId>
