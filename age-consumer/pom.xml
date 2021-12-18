@@ -24,13 +24,12 @@
             <version>4.3.2</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/fluent-hc -->
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpclient</artifactId>
+            <artifactId>fluent-hc</artifactId>
             <version>4.5.13</version>
         </dependency>
-
 
         <!--        <dependency>-->
 <!--            <groupId>au.com.dius.pact.consumer</groupId>-->
