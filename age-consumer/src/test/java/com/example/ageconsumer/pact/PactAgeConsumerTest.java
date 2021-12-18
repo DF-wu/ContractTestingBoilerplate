@@ -9,8 +9,8 @@ import au.com.dius.pact.consumer.junit5.ProviderType;
 import au.com.dius.pact.core.model.RequestResponsePact;
 import au.com.dius.pact.core.model.annotations.Pact;
 import com.jayway.jsonpath.JsonPath;
+import org.apache.hc.client5.http.fluent.Request;
 import org.apache.http.HttpResponse;
-import org.apache.http.client.fluent.Request;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
@@ -50,7 +50,7 @@ public class PactAgeConsumerTest {
     @Test
     @PactTestFor(pactMethod = "validDateFromProvider")
     public void testValidDateFromProvider(MockServer mockServer) throws IOException {
-		HttpResponse httpResponse = Request.Get(mockServer.getUrl() + "/provider/validDate?date=2001-02-03")
+		HttpResponse httpResponse = (HttpResponse) Request.get(mockServer.getUrl() + "/provider/validDate?date=2001-02-03")
                 .execute().returnResponse();
 
 		assertThat(httpResponse.getStatusLine().getStatusCode()).isEqualTo(200);
