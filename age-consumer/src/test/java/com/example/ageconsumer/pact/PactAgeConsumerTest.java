@@ -42,7 +42,7 @@ public class PactAgeConsumerTest {
                     object.numberType("year", 2000);
                     object.numberType("month", 8);
                     object.numberType("day", 3);
-//                    object.booleanType("isValidDate", true);
+                    object.booleanType("isValidDate", true);
                 }).build())
                 .toPact();
     }
