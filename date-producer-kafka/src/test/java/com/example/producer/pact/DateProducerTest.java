@@ -38,6 +38,11 @@ public class DateProducerTest {
         context.setTarget(new MessageTestTarget());
     }
 
+    @BeforeEach
+    static void enablePublishingPact() {
+        System.setProperty("pact.verifier.publishResults", "true");
+    }
+
     @SneakyThrows
     @PactVerifyProvider("valid date from kafka provider")
     public String verifyDateInformationMessage() {
