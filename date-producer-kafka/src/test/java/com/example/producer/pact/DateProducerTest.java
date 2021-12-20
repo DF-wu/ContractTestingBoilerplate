@@ -37,7 +37,7 @@ public class DateProducerTest {
     void before(PactVerificationContext context) {
         context.setTarget(new MessageTestTarget());
         System.setProperty("pact.verifier.publishResults", "true");
-        System.setProperty("pact.provider.version", buildVersion);
+        // System.setProperty("pact.provider.version", buildVersion);
     }
     
 
