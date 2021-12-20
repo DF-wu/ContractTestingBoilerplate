@@ -39,7 +39,7 @@ public class DateProducerTest {
         System.setProperty("pact.verifier.publishResults", "true");
         System.setProperty("pact.provider.version", buildVersion);
     }
-    }
+    
 
 
 
