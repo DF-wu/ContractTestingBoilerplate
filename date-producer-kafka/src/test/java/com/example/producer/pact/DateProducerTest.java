@@ -38,7 +38,7 @@ public class DateProducerTest {
         context.setTarget(new MessageTestTarget());
     }
 
-    @BeforeEach
+    @BeforeAll
     static void enablePublishingPact() {
         System.setProperty("pact.verifier.publishResults", "true");
     }
