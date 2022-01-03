@@ -27,10 +27,8 @@ import java.time.LocalDate;
 @Consumer("dateConsumerKafka")
 @PactBroker(
         host = "localhost",
-        port = "8282",
-        consumerVersionSelectors = {
-            @VersionSelector(tag = "pact_branch")
-        })
+        port = "8282"
+       )
 // @PactFolder("./pacts")
 public class DateProducerTest {
 
