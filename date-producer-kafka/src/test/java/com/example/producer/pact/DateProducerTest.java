@@ -11,6 +11,8 @@ import au.com.dius.pact.provider.junitsupport.Consumer;
 import au.com.dius.pact.provider.junitsupport.Provider;
 import au.com.dius.pact.provider.junitsupport.loader.PactBroker;
 import au.com.dius.pact.provider.junitsupport.loader.PactFolder;
+import au.com.dius.pact.provider.junitsupport.loader.VersionSelector;
+
 import com.example.producer.Producer;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.SneakyThrows;
@@ -23,7 +25,12 @@ import java.time.LocalDate;
 
 @Provider("dateProviderKafka")
 @Consumer("dateConsumerKafka")
-@PactBroker(url = "http://localhost:8282/")
+@PactBroker(
+        host = "localhost",
+        port = "8282",
+        consumerVersionSelectors = {
+            @VersionSelector(tag = "pact_branch")
+        })
 // @PactFolder("./pacts")
 public class DateProducerTest {
 
